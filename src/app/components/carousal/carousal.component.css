@@ -1,0 +1,44 @@
+.img-overlay{
+  background-color: #000000;
+}
+
+.img-overlay img{
+  opacity: 0.6;
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel-indicators {
+  bottom: 0;
+  top: 400px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 20px; /* change width */
+  height: 20px; /* change height */
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #34990f;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+  border-radius: 100%;
+}

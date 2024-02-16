@@ -1,0 +1,29 @@
+.bg-footer{
+  background-color: #2c353f;
+  padding: 20px 0;
+  margin-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.text-brand{
+color: #34990f;
+font-size: 22px;
+font-weight: bold;
+}
+
+.fac a{
+  text-decoration: none;
+  /* color: #34990f; */
+  color: #e9ecef;
+  font-weight: bold;
+}
+
+.fac a:hover{
+  color: #34990f;
+}
+
+.LinkedIn a{
+  text-decoration: none;
+  color: #e9ecef;
+  font-weight: bold;
+}
