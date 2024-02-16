@@ -8,6 +8,7 @@ import { BookComponent } from './home/books/book/book.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { NotfindComponent } from './notfind/notfind.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FooterComponent } from './layout/footer/footer.component';
     BookComponent,
     NavbarComponent,
     FooterComponent,
+    NotfindComponent,
   ],
   imports: [
     BrowserModule,
