@@ -8,7 +8,7 @@
 
     },
   {"id":"2",
-  "book":"The 7 Habits of Highly Effective People",
+  "book":"The 7 Habits Effective",
   "author":"Stephen R. Covey",
   "price":"100",
   "category":"skills",
@@ -21,7 +21,15 @@
 "price":"400",
     "category":"skills",
     "image":"https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id":"4",
+  "book":"Angular 8",
+  "author":"None",
+  "price":"500",
+      "category":"skills",
+      "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
+    }
 
-  }
 ]
 
