@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NotfindComponent } from './notfind/notfind.component';
+import { CarousalComponent } from './components/carousal/carousal.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { NotfindComponent } from './notfind/notfind.component';
     NavbarComponent,
     FooterComponent,
     NotfindComponent,
+    CarousalComponent,
   ],
   imports: [
     BrowserModule,
