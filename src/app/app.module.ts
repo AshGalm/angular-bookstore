@@ -10,6 +10,9 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NotfindComponent } from './notfind/notfind.component';
 import { CarousalComponent } from './components/carousal/carousal.component';
+import { LoginComponent } from './login/login.component';
+import { ShowBooksComponent } from './home/show-books/show-books.component';
+import { BookDetailsComponent } from './home/book-details/book-details.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { CarousalComponent } from './components/carousal/carousal.component';
     FooterComponent,
     NotfindComponent,
     CarousalComponent,
+    LoginComponent,
+    ShowBooksComponent,
+    BookDetailsComponent,
   ],
   imports: [
     BrowserModule,
