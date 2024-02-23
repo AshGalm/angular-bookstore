@@ -29,10 +29,15 @@ console.log('Book component');
   }
 
   //  Send to book details page
-  bookDetails(id:string, author:string){
-    this.router.navigate(['/details',id,author]
-    ,{queryParams: {id:id,author:author,
-     }
+  bookDetails(id:string, author:string, description:string , book:string, image:string){
+    this.router.navigate(['/details',id]
+    ,{
+      queryParams: {
+        'author': author,
+        'description':description,
+        'book':book,
+        'image':image
+      }
     },
     );
   }

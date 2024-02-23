@@ -3,6 +3,7 @@
   "book":"Rich Dad, Poor Dad",
   "author":"Robert T. Kiyosak",
   "price":"100",
+  "description":"Praesent eget purus at urna dictum scelerisque. Curabitur mattis, lectus euismod luctus faucibus, nulla arcu posuere ante, a iaculis massa sapien vitae massa. Nullam aliquam tortor sed porta blandit. Phasellus feugiat, quam a fringilla egestas, metus mi euismod erat, at varius lectus justo quis nisi. Aenean ultrices ornare porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi orci quam, ultrices sed quam eu, tincidunt pharetra nunc. Suspendisse eleifend dui ut ante mattis vehicula. Donec eget congue mi, sit amet dictum eros. Cras a lorem purus.  ",
    "category":"skills",
       "image":"https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UF1000,1000_QL80_.jpg"
 
@@ -11,6 +12,7 @@
   "book":"The 7 Habits Effective",
   "author":"Stephen R. Covey",
   "price":"100",
+  "description":"Praesent eget purus at urna dictum scelerisque. Curabitur mattis, lectus euismod luctus faucibus, nulla arcu posuere ante, a iaculis massa sapien vitae massa. Nullam aliquam tortor sed porta blandit. Phasellus feugiat, quam a fringilla egestas, metus mi euismod erat, at varius lectus justo quis nisi. Aenean ultrices ornare porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi orci quam, ultrices sed quam eu, tincidunt pharetra nunc. Suspendisse eleifend dui ut ante mattis vehicula. Donec eget congue mi, sit amet dictum eros. Cras a lorem purus.  ",
   "category":"skills",
   "image":"https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UF1000,1000_QL80_.jpg"
 
@@ -19,6 +21,7 @@
 "book":"Flutter Maps",
 "author":"None",
 "price":"400",
+"description":"Praesent eget purus at urna dictum scelerisque. Curabitur mattis, lectus euismod luctus faucibus, nulla arcu posuere ante, a iaculis massa sapien vitae massa. Nullam aliquam tortor sed porta blandit. Phasellus feugiat, quam a fringilla egestas, metus mi euismod erat, at varius lectus justo quis nisi. Aenean ultrices ornare porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi orci quam, ultrices sed quam eu, tincidunt pharetra nunc. Suspendisse eleifend dui ut ante mattis vehicula. Donec eget congue mi, sit amet dictum eros. Cras a lorem purus.",
     "category":"skills",
     "image":"https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UF1000,1000_QL80_.jpg"
   },
@@ -27,15 +30,18 @@
   "book":"Angular 8",
   "author":"None",
   "price":"500",
+  "description":"lorem ipsum",
+
       "category":"skills",
       "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
     },
     {
       "id":"5",
-    "book":"Angular 8",
-    "author":"None",
+    "book":"Bootstarp 5",
+    "author":"Speedy Gonzales",
     "price":"500",
-        "category":"skills",
+    "description":"lorem ipsum",
+    "category":"skills",
         "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
       }
 

@@ -15,4 +15,4 @@ const bookRoute: Routes = [
   exports: [RouterModule],
   declarations: [],
 })
-export class BookRoutingModule {}
+export class BookModule {}

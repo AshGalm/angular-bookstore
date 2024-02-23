@@ -1,13 +1,10 @@
-<p>book-details works!</p>
-
 <div class="text-center">
-  <h1>
-    {{id}}
-
-  </h1>
-  <div class="text-center" *ngIf="id">
-    <h2>{{book?.author}}</h2>
-    <p>worked but no data</p>
+  <div class="text-center">
+    <img src="{{bookImage}}" class="img-fluid rounded-start h-100" alt="...">
+    <h1>{{bookName}}</h1>
+    <h2>{{id}} {{author}}</h2>
+    <p>{{description}}</p>
   </div>
+
   <h2>not yet</h2>
 </div>

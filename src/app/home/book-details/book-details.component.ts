@@ -13,6 +13,9 @@ import { Subject } from 'rxjs';
 export class BookDetailsComponent  implements OnInit, OnDestroy{
    id:number | undefined;
    author: string | undefined;
+   description: string | undefined;
+   bookName: string | undefined;
+   bookImage: string | undefined;
    book: Book | undefined;
 
   //  Unsubscribe
@@ -24,6 +27,10 @@ export class BookDetailsComponent  implements OnInit, OnDestroy{
    ngOnInit(): void {
     const idParam = this.router.snapshot.paramMap.get('id');
     this.id = idParam ? +idParam : undefined;
+    this.author = this.router.snapshot.queryParamMap.get('author') || undefined;
+    this.description = this.router.snapshot.queryParamMap.get('description') || undefined;
+    this.bookName = this.router.snapshot.queryParamMap.get('book') || undefined;
+    this.bookImage = this.router.snapshot.queryParamMap.get('image') || undefined;
 
     if(this.id){
       this.dataService.getBook(this.id)

@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { BookDetailsComponent } from './book-details/book-details.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
   },
-  // {
-  //   path: 'books',
-  //   loadChildren: () => import('.../books/books.module').then(m => m.BooksModule)
-  // },
-  // {
-  //   path: 'details',
-  //   loadChildren: () => import('./book-details/book-details.module').then(m => m.BookDetailsModule)
+  {
+    path: 'books',
+    loadChildren: () => import('./books/book.module').then(m => m.BookModule)
+  },
+  {path:'details/:id',
+  component:BookDetailsComponent},
 
-  // }
 ];
 
 @NgModule({
