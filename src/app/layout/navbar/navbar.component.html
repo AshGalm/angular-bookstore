@@ -1,4 +1,5 @@
 
+
 <div class="col-sm-12 col-md-12 col-lg-12 ">
     <nav class="navbar  navbar-expand-lg bg-style shadow">
       <div class="container-fluid">
@@ -8,16 +9,16 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav   me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" routerLink="/home" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" routerLink="books" >Books</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">Account</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="setting">Setting</a>
+              <a class="nav-link" routerLink="/home/setting">Setting</a>
             </li>
           </ul>
         </div>
@@ -25,3 +26,5 @@
     </nav>
 
   </div>
+
+  <router-outlet></router-outlet>

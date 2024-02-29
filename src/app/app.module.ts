@@ -13,6 +13,8 @@ import { CarousalComponent } from './components/carousal/carousal.component';
 import { LoginComponent } from './login/login.component';
 import { ShowBooksComponent } from './home/show-books/show-books.component';
 import { BookDetailsComponent } from './home/book-details/book-details.component';
+import { SettingComponent } from './home/setting/setting.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,15 @@ import { BookDetailsComponent } from './home/book-details/book-details.component
     LoginComponent,
     ShowBooksComponent,
     BookDetailsComponent,
+    SettingComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

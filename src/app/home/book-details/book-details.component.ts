@@ -11,11 +11,10 @@ import { Subject } from 'rxjs';
   styleUrls: ['./book-details.component.css']
 })
 export class BookDetailsComponent  implements OnInit, OnDestroy{
-   id:number | undefined;
-   author: string | undefined;
-   description: string | undefined;
-   bookName: string | undefined;
-   bookImage: string | undefined;
+  bookId:string | undefined;
+  authorName: string | undefined;
+  quantity: string | undefined;
+  bookName: string | undefined;
    book: Book | undefined;
 
   //  Unsubscribe
@@ -24,24 +23,32 @@ export class BookDetailsComponent  implements OnInit, OnDestroy{
 
    constructor(private dataService:DataService,private router:ActivatedRoute) {}
 
-   ngOnInit(): void {
-    const idParam = this.router.snapshot.paramMap.get('id');
-    this.id = idParam ? +idParam : undefined;
-    this.author = this.router.snapshot.queryParamMap.get('author') || undefined;
-    this.description = this.router.snapshot.queryParamMap.get('description') || undefined;
-    this.bookName = this.router.snapshot.queryParamMap.get('book') || undefined;
-    this.bookImage = this.router.snapshot.queryParamMap.get('image') || undefined;
 
-    if(this.id){
-      this.dataService.getBook(this.id)
+  //  Delete Book
+  deleteBook(bookId:string){
+    this.dataService.deleteBook(bookId);
+    console.log('Book Deleted');
+
+   }
+  //  Delete Book
+
+   ngOnInit(): void {
+    const idParam = this.router.snapshot.paramMap.get('bookId');
+    this.bookId = this.router.snapshot.queryParamMap.get('bookId') || undefined;
+    this.authorName = this.router.snapshot.queryParamMap.get('authorName') || undefined;
+    this.quantity = this.router.snapshot.queryParamMap.get('quantity') || undefined;
+    this.bookName = this.router.snapshot.queryParamMap.get('bookName') || undefined;
+
+    if(this.bookId){
+      this.dataService.getBook(this.bookId)
       .pipe(takeUntil(this.unsubscribe$)
       )
       .subscribe(
         (book:Book) => {
         console.log(book);
-        this.book = book;
-        this.author = book.author;
-        console.log(book.book);
+        this.bookName = this.bookName;
+        this.authorName = book.authorName;
+        console.log(book.bookName);
         console.log('Book details page');
       });
     }else{
