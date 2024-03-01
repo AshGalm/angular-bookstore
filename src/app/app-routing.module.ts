@@ -1,19 +1,37 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 // import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home/home.component';
-import { BookComponent } from './home/books/book/book.component';
 import { NotfindComponent } from './notfind/notfind.component';
+import { LoginComponent } from './login/login.component';
+import { loginGuard } from './login.guard';
 
 const routes: Routes = [
-  {path:'', component: HomeComponent},
-  {path:'books', component: BookComponent},
+  {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full',
+  },
+
+  {
+    path:'login',
+  component:LoginComponent,
+},
+
+  {
+    path:'home',
+  loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+  canActivate: [loginGuard],
+
+},
+
 
   {path:'**',pathMatch:'full', component: NotfindComponent}
 ];
 
+
 @NgModule({
+  // , { enableTracing: true }
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }

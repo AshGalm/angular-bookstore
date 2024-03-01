@@ -10,6 +10,11 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NotfindComponent } from './notfind/notfind.component';
 import { CarousalComponent } from './components/carousal/carousal.component';
+import { LoginComponent } from './login/login.component';
+import { ShowBooksComponent } from './home/show-books/show-books.component';
+import { BookDetailsComponent } from './home/book-details/book-details.component';
+import { SettingComponent } from './home/setting/setting.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +25,18 @@ import { CarousalComponent } from './components/carousal/carousal.component';
     FooterComponent,
     NotfindComponent,
     CarousalComponent,
+    LoginComponent,
+    ShowBooksComponent,
+    BookDetailsComponent,
+    SettingComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
