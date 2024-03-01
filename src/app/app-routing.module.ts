@@ -12,14 +12,16 @@ const routes: Routes = [
     pathMatch: 'full',
   },
 
-  {path:'login',
+  {
+    path:'login',
   component:LoginComponent,
-  canActivate: [loginGuard],
 },
 
   {
     path:'home',
-  loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+  loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+  canActivate: [loginGuard],
+
 },
 
 
